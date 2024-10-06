@@ -1,0 +1,106 @@
+.container{
+    width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 72px;
+    background-color: #F9F9F7;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%); 
+      opacity: 0; 
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+.container .header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: slideInFromLeft 1.2s ease-out;
+}
+
+.container .header h1{
+    font-size: 100px;
+    font-weight: 500;
+    font-family: none;
+}
+
+.container .header p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: none;
+}
+
+.container .form{
+    width: 797px;
+    height: 588px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+    border-radius: 5%;
+    padding: 40px 40px;
+    animation: slideInFromLeft 1.6s ease-out;
+}
+
+.container .form span{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.container .form label{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: none;
+}
+
+
+.container .form span input{
+    text-align: center;
+
+}
+
+
+.container .form input{
+    text-align: center;
+    width: 350px;
+    height: 60px;
+    border-radius: 72px;
+    border: 1px solid #DBDFD0;
+
+}
+
+
+.container .form #Total{
+    text-align: left;
+    width: 717px;
+    height: 60px;
+    border-radius: 72px;
+    border: 1px solid #DBDFD0;
+}
+
+
+
+.container .form button{
+    width: 717px;
+    height: 64px;
+    background-color: #AD343E;
+    color: white;
+    font-size: 16px;
+    font-family: none;
+   border-radius: 118px;
+   border: none;
+   cursor: pointer; 
+}
+
+.container .form button:hover{
+    background-color: #ad343ece;
+    color: white;
+}

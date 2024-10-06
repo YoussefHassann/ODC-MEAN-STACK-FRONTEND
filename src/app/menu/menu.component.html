@@ -1,0 +1,31 @@
+<div class="contianer">
+<div class="header">
+        <h1>Our Menu</h1>
+        <p>We consider all the drivers of change gives you the components <br> you need to change to create a truly happens.</p>
+
+    <div class="btns">
+        <button>All</button>
+        <button  routerLinkActive="active">BreakFast</button>
+        <button  routerLinkActive="active">Main Dish</button>
+        <button  routerLinkActive="active">Drinks</button>
+        <button  routerLinkActive="active">Desserts</button>
+    </div>
+
+</div>
+
+<div class="cards">
+    @for (product of productarray; track $index){
+    <div class="card">
+            <div class="photo">
+                <img [src]="product.productImage" alt="">
+            </div>
+            <div class="details">
+                <p>{{product.productPrice}}$</p>
+                <p>{{product.productName}}</p>
+                <button routerLink="{{product._id}}" >More Details</button>
+            </div>
+    </div>
+    }
+</div>
+
+</div>

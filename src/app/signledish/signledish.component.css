@@ -1,0 +1,85 @@
+.container{
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%); 
+      opacity: 0; 
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+
+.container .card{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    /* height: 428px; */
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #DBDFD0;
+    border-radius: 20px;
+    animation: slideInFromLeft 1s ease-out; 
+}
+
+
+.container .card img{
+ /* width: 306px; */
+ /* height: 230px; */
+ border-right: 1px solid #DBDFD0;
+ object-fit: contain;
+ animation: slideInFromLeft 1.2s ease-out; 
+}
+
+
+
+.container .card .details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;    
+    animation: slideInFromLeft 1.6s ease-out; 
+}
+.container .card .details p:nth-child(1){
+    color: black;
+    /* font-family: none; */
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+.container .card .details p:nth-child(2){
+    color: #AD343E;
+    /* font-family: none; */
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container  .card .details p{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.container  .card .details button{
+    width: 150px;
+    height: 48px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #DBDFD0;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container  .card .details button:hover{
+    background-color: #AD343E;
+    color: white;
+}

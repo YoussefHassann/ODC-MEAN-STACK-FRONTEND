@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="header">
+        <h1>Book Your Table</h1>
+    </div>
+    <div >
+        <form class="form" (submit)="submitForm($event)">
+            <span class="names">
+            <label for="name">Date</label><br>
+            <input type="date"  >
+            
+            <label for="name">Name</label><br>
+            <input type="text"  placeholder="    Enter your Name">
+
+        </span>
+        
+        <span>
+            <label for="name">Time</label><br>
+            <input type="time" >
+            
+            <label for="name">PhoneNumber</label><br>
+            <input type="text"  placeholder="    Enter your PhoneNumber">
+            
+            
+            </span>
+
+            <span>
+                
+                <label for="total">Total Person</label><br>
+                <input type="text"  id="Total" placeholder="Enter How may person would We Serve ">
+            
+            </span>
+
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div> 

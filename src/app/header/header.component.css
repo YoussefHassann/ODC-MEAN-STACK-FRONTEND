@@ -1,0 +1,139 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1600px;
+    height: 129px;
+    background-color: #F9F9F7;
+}
+
+.container .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1600px;
+    height: 45px;
+    background-color: #474747;
+    color: white;
+}
+
+.container .nav .info{
+    display: flex;
+    width: 345px;
+    height: 24px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 150px;
+    gap: 20px;
+    font-size: 16px;
+    align-items: center;
+}
+.container .nav .info span{
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+}
+.container .nav .info img{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.container .nav .social{
+    display: flex;
+    width: 120px;
+    height: 27px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    gap: 4px;
+    margin-right: 154px;
+}
+
+.container .nav .social img{
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+
+
+.container .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    width: 1450px;
+    height: 84px;
+    margin: auto;
+    /* margin-top: 74px; */
+}
+
+.container .header img{
+    width: 211px;
+    height: 55px;
+}
+
+
+.container .header .mid{
+    display: flex;
+    width: 433px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    text-align: center;
+}
+
+.container .header .mid a{
+    text-decoration: none;
+    text-align: center;
+    width: 77px;
+    height: 34px;
+    color: black;   
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 34px;
+    background-color: transparent;
+}
+
+.container .header .mid a:hover{
+    background-color: #DBDFD0;
+}
+
+.container .header .mid button{
+    /* text-decoration: none; */
+    text-align: center;
+    width: 77px;
+    height: 34px;
+    color: black;   
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 34px;
+    border: none;
+    background-color: transparent;
+    transition: 10ms all;
+}
+
+.container .header .mid .active{
+    background-color: #DBDFD0;
+}
+.container .header .mid button:hover{
+    background-color: #DBDFD0;
+}
+
+.container .header button{
+    width: 147px;
+    height: 48px;
+    color: black;   
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 34px;
+    /* border: none; */
+    background-color: transparent;
+    transition: 10ms all;
+}
+
+.container .header button:hover{
+    background-color: #DBDFD0;
+}
+.container .header  .active{
+    background-color: #DBDFD0;
+}
